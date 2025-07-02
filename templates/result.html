@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+</head>
+<body>
+    {% for key, value in result.items() %}
+        <h1>Your score is {{ value }}.</h1>
+    {% endfor %}
+    
+    <h2>Details:</h2>
+    {% if result.get('score') == 100 %}
+        <h2>Congratulations! You scored 100!</h2>
+    {% else %}
+        <h2>Keep trying to improve your score!</h2>
+    {% endif %}
+</body>
+</html>
