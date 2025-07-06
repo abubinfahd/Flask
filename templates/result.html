@@ -10,11 +10,14 @@
         <h1>Your score is {{ value }}.</h1>
     {% endfor %}
     
-    <h2>Details:</h2>
-    {% if result.get('score') == 100 %}
+    <h2>Comment:</h2>
+    {% if score == 100 %}
         <h2>Congratulations! You scored 100!</h2>
+    {% elif score >= 50 %}
+        <h2>Good job! You passed the exam.</h2>
     {% else %}
-        <h2>Keep trying to improve your score!</h2>
+        <h2>Keep trying to improve your score.</h2>
     {% endif %}
+
 </body>
 </html>
