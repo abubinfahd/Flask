@@ -5,3 +5,5 @@
 - redirect to html file
 - GET, POST method
 - Jinja template engine
+- PUT, DELETE method
+- use postman software to update the info
